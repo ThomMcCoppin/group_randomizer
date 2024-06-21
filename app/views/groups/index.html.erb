@@ -1,0 +1,10 @@
+<h1>Groups</h1>
+
+<ul>
+  <% @groups.each do |group| %>
+    <% group[:members].each do |member| %>
+      <li><%= member[:name] %></li>
+    <% end %>
+    <br />
+  <% end %>
+</ul>
