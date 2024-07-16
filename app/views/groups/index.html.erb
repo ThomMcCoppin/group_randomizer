@@ -1,6 +1,7 @@
+<p>Refresh to re-sort groups</p>
 <h1>Groups</h1>
 
-<ul>
+<ul>  
   <% @groups.each do |group| %>
     <% group[:members].each do |member| %>
       <li><%= member[:name] %></li>
