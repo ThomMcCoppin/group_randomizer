@@ -11,7 +11,7 @@ class GroupsController < ApplicationController
     end
 
     def members
-      @members = Member.where(group_avoid: nil)
+      @members ||= Member.where(group_avoid: nil)
     end
 
     def create_group_array
